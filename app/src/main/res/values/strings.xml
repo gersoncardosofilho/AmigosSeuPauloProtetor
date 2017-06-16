@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="facebook_app_id">112169139364110</string>
+    <string name="fb_login_protocol_scheme">fb112169139364110</string>
+
+
+    <string name="app_name">AmigosSeuPauloProtetor</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="bemvindo">Seja bem-vindo ao aplicativo dos Amigos do Seu Paulo Protetor, aqui você fica por dentro das novidades e tem acesso às nossas contas para doações...</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main3">Main3Activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
