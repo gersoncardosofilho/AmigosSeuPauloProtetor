@@ -15,11 +15,10 @@ import android.widget.ListView;
 
 import com.example.gerso.amigosseupauloprotetor.R;
 import com.example.gerso.amigosseupauloprotetor.activity.Util.MySeedData;
-import com.example.gerso.amigosseupauloprotetor.activity.adapter.NovidadesAdapter;
+import com.example.gerso.amigosseupauloprotetor.activity.adapter.CardsAdapter;
 import com.example.gerso.amigosseupauloprotetor.activity.models.Novidade;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -29,7 +28,7 @@ public class FragmentNovidades extends Fragment {
 
     ListView listViewNovidades;
     View rootView;
-    NovidadesAdapter novidadesAdapter;
+    CardsAdapter cardsAdapter;
     LinearLayoutManager mLinearLayoutManager;
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
@@ -59,7 +58,7 @@ public class FragmentNovidades extends Fragment {
         mNovidadesList = createDataCards();
 
         mRecyclerView.setLayoutManager(mLinearLayoutManager);
-        mRecyclerView.setAdapter(new NovidadesAdapter(mNovidadesList, mActivity));
+        mRecyclerView.setAdapter(new CardsAdapter(mNovidadesList, mActivity));
 
         return rootView;
     }

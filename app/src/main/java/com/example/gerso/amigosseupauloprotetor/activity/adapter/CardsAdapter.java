@@ -1,18 +1,17 @@
 package com.example.gerso.amigosseupauloprotetor.activity.adapter;
 
 import android.content.Context;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.gerso.amigosseupauloprotetor.R;
+import com.example.gerso.amigosseupauloprotetor.activity.models.Banco;
 import com.example.gerso.amigosseupauloprotetor.activity.models.Novidade;
 
 import java.util.ArrayList;
@@ -21,7 +20,7 @@ import java.util.ArrayList;
  * Created by gerso on 6/15/2017.
  */
 
-public class NovidadesAdapter extends RecyclerView.Adapter<NovidadesAdapter.MyViewHolder> {
+public class CardsAdapter extends RecyclerView.Adapter<CardsAdapter.MyViewHolder> {
 
 
     ArrayList<Novidade> mData;
@@ -42,10 +41,11 @@ public class NovidadesAdapter extends RecyclerView.Adapter<NovidadesAdapter.MyVi
         }
     }
 
-    public NovidadesAdapter(ArrayList<Novidade> mData, FragmentActivity mActivity) {
+    public CardsAdapter(ArrayList<Novidade> mData, FragmentActivity mActivity) {
         this.mData = mData;
         this.mActivity = mActivity;
     }
+
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
