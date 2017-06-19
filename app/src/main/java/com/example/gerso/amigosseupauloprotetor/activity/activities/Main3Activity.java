@@ -38,7 +38,8 @@ public class Main3Activity extends AppCompatActivity {
         // primary sections of the activity.
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-        tabLayout.addTab(tabLayout.newTab().setText("Novidades"));
+        //tabLayout.addTab(tabLayout.newTab().setText("Novidades"));
+        tabLayout.addTab(tabLayout.newTab().setText("Timeline"));
         tabLayout.addTab(tabLayout.newTab().setText("Contas"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         //tabLayout.animate();

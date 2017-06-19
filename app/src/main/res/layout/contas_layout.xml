@@ -15,7 +15,11 @@
         card_view:cardUseCompatPadding="true"
         card_view:contentPadding="8dp"
         card_view:cardCornerRadius="2dp"
-        card_view:cardElevation="5dp">
+        card_view:cardElevation="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -23,66 +27,108 @@
 
             <ImageView
                 android:id="@+id/imageViewBanco"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@color/cardview_dark_background"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:scaleType="centerInside"
                 card_view:layout_constraintLeft_toLeftOf="parent"
                 card_view:layout_constraintRight_toRightOf="parent"
-                card_view:layout_constraintTop_toBottomOf="@+id/textViewTitulo"
-                card_view:layout_constraintHorizontal_bias="0.0" />
+                card_view:layout_constraintHorizontal_bias="0.03"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp"
+                card_view:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp" />
 
             <TextView
                 android:id="@+id/textViewNomeBanco"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="wrap_content" android:textStyle="bold"
+                android:textSize="12sp"
                 android:text="TextView"
-                card_view:layout_constraintLeft_toRightOf="@+id/imageViewBanco"
-                android:layout_marginLeft="9dp"
-                card_view:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="7dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginRight="179dp"
                 card_view:layout_constraintRight_toRightOf="parent"
+                card_view:layout_constraintTop_toTopOf="@+id/imageViewBanco"
+                android:layout_marginTop="0dp"
+                card_view:layout_constraintLeft_toRightOf="@+id/imageViewBanco"
+                android:layout_marginLeft="8dp"
                 card_view:layout_constraintHorizontal_bias="0.0" />
 
             <TextView
                 android:id="@+id/textViewAgencia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
-                android:layout_marginTop="8dp"
-                card_view:layout_constraintTop_toBottomOf="@+id/textViewNomeBanco"
-                card_view:layout_constraintLeft_toRightOf="@+id/imageViewBanco"
-                android:layout_marginLeft="8dp" />
+                android:text="TextView" android:textSize="10sp"
+                card_view:layout_constraintLeft_toRightOf="@+id/textView3"
+                android:layout_marginLeft="5dp"
+                card_view:layout_constraintBaseline_toBaselineOf="@+id/textView3" />
 
             <TextView
                 android:id="@+id/textViewConta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
-                card_view:layout_constraintBaseline_toBaselineOf="@+id/textViewAgencia"
-                card_view:layout_constraintLeft_toRightOf="@+id/textViewAgencia"
-                android:layout_marginLeft="31dp" />
+                android:text="TextView" android:textSize="10sp"
+                card_view:layout_constraintLeft_toRightOf="@+id/textView4"
+                android:layout_marginLeft="5dp"
+                card_view:layout_constraintBaseline_toBaselineOf="@+id/textView4" />
 
             <TextView
                 android:id="@+id/textViewTipoConta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
-                android:layout_marginTop="8dp"
-                card_view:layout_constraintTop_toBottomOf="@+id/textViewAgencia"
-                card_view:layout_constraintLeft_toRightOf="@+id/imageViewBanco"
-                android:layout_marginLeft="8dp" />
+                android:text="TextView" android:textSize="10sp"
+                card_view:layout_constraintLeft_toRightOf="@+id/textView5"
+                android:layout_marginLeft="7dp"
+                card_view:layout_constraintBaseline_toBaselineOf="@+id/textView5" />
 
             <TextView
                 android:id="@+id/textViewCpf"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="TextView" android:textSize="10sp"
+                card_view:layout_constraintLeft_toRightOf="@+id/textView6"
+                android:layout_marginLeft="2dp"
+                card_view:layout_constraintBaseline_toBaselineOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ag.:" android:textSize="12sp"
+                android:textStyle="bold"
                 card_view:layout_constraintLeft_toRightOf="@+id/imageViewBanco"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                card_view:layout_constraintTop_toBottomOf="@+id/textViewTipoConta" />
+                android:layout_marginTop="2dp"
+                card_view:layout_constraintTop_toBottomOf="@+id/textViewNomeBanco" />
+
+            <TextView
+                android:id="@+id/textView4" android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conta:" android:textStyle="bold"
+                card_view:layout_constraintBaseline_toBaselineOf="@+id/textViewAgencia"
+                card_view:layout_constraintLeft_toRightOf="@+id/textViewAgencia"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo da conta:" android:textStyle="bold"
+                card_view:layout_constraintLeft_toRightOf="@+id/imageViewBanco"
+                android:layout_marginLeft="8dp" android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                card_view:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cpf:" android:textStyle="bold" android:textSize="12sp"
+                card_view:layout_constraintLeft_toRightOf="@+id/imageViewBanco"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                card_view:layout_constraintTop_toBottomOf="@+id/textView5"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp" />
 
 
         </android.support.constraint.ConstraintLayout>

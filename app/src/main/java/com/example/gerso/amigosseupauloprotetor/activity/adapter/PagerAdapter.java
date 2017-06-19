@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.example.gerso.amigosseupauloprotetor.activity.fragments.FragmentContas;
+import com.example.gerso.amigosseupauloprotetor.activity.fragments.FragmentFacebook;
 import com.example.gerso.amigosseupauloprotetor.activity.fragments.FragmentNovidades;
 
 /**
@@ -25,7 +26,8 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                FragmentNovidades tab1 = new FragmentNovidades();
+                //FragmentNovidades tab1 = new FragmentNovidades();
+                FragmentFacebook tab1 = new FragmentFacebook();
                 return tab1;
 
             case 1:
